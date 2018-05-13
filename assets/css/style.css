@@ -1,0 +1,78 @@
+body {
+    min-width: 360px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+}
+.box {
+    width: 100%;
+}
+
+/* responsive for Nexus 5 */
+@media screen and (min-width: 150px) {
+    header {
+        border-bottom: 2px solid grey;
+        height: 120px;
+        padding: 0px 10px 10px 0px;
+        margin-bottom: 10px;
+    }
+    
+    h1,h3 {
+        color: #2d3c49;
+        letter-spacing: 2px;
+    }
+    h2 {
+        color: #7d97ad;
+        word-spacing: 1px;
+        letter-spacing: 1.5px;
+    }
+    
+    #logo {
+        height: 100%;
+        float: left;
+    }
+    
+    #header_text {
+        float: right;
+    }
+    
+    #banner-img {
+        width: 100%;
+    }
+
+    .mywork-img {
+        width: 100%;
+    }
+    .mywork-header {
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}
+
+
+/* responsive for ipad */
+@media screen and (min-width: 768px) {
+    .mywork {
+        width: 50%;
+        box-sizing:border-box;        
+        padding: 10px;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        width: 960px;
+        margin: auto;
+    }
+    .mywork {
+        width: 33.333%;
+        display: inline-block;
+        overflow: hidden;
+    }
+}
